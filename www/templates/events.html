@@ -1,0 +1,26 @@
+<ion-view view-title="Events">
+  <ion-content ng-controller="EventsCtrl" class="background-register">
+    <ion-refresher
+     pulling-text="Pull to refresh..."
+     on-refresh="doRefresh()">
+    </ion-refresher>
+
+    <ion-list>
+      <ion-item class="no-padding" href="#/app/event/{{item.id}}" >
+        <div class="row">
+            <div id="div1" class="col color1">{{task.title}}</div>
+            <div id="div2" class="col col-75 color2">lorem ipsum</div>
+        </div>
+        <ion-option-button class="button-calm icon ion-android-favorite" ng-click="favorite(item)">
+            &nbsp Favorite
+         </ion-option-button>
+         <ion-option-button class="button-positive icon ion-android-notifications" ng-click="notify(item)">
+            &nbsp Notify
+       </ion-option-button>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-infinite-scroll ng-if="moreDataCanBeLoaded()" on-infinite="loadMore()" distance="20%"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>

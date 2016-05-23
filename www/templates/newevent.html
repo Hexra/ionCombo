@@ -1,0 +1,59 @@
+<ion-modal-view>
+  <ion-header-bar class="custom-purple">
+    <h1 class="title" style="color: #ffffff">New Event</h1>
+    <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+  </ion-header-bar>
+  <ion-content class="no-padding no-margin">
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label" style="color: #8C889B;">Title</span>
+        <input type="text" placeholder="Title" ng-model="newEventData.title">
+      </label>
+      <label class="item item-input item-floating-label" style="border-color: #3D3558">
+        <span class="input-label" style="color: #8C889B;">Description</span>
+        <textarea rows="6" placeholder="Description" ng-model="newEventData.description"></textarea>
+      </label>
+      <label class="item item-input item-floating-label" style="border-color: #3D3558">
+        <span class="input-label" style="color: #8C889B;">Location</span>
+        <textarea rows="2" placeholder="Location" ng-model="newEventData.location"></textarea>
+      </label>
+      <label class="item item-input item-stacked-label" style="border-color: #3D3558">
+        <span class="input-label" style="color: #8C889B;">Participant</span>
+      </label>
+      <ion-radio ng-model="newEventData.participant" ng-value="'UKM Only'">UKM</ion-radio>
+      <ion-radio ng-model="newEventData.participant" ng-value="'Open For Public'">Public</ion-radio>
+      <label class="item item-input item-floating-label" style="border-color: #3D3558">
+        <span class="input-label" style="color: #8C889B;">Contact Number</span>
+        <input type="text" placeholder="Contact Number" ng-model="newEventData.contact">
+      </label>
+      <label class="item item-input item-stacked-label" style="border-color: #3D3558; border-bottom: 0px;">
+        <span class="input-label" style="color: #8C889B;">Date & Time </span>
+      </label>
+      <div class="padding row">
+        <div class="col col-50"><center><mydate>{{newEventData.displayDate | date:'dd/MM/yyyy'}}</mydate></center></div>
+        <div class="col col-50"><center><mydate>{{newEventData.displayHour}}:{{newEventData.displayMinute}}</mydate></center></div>
+      </div>
+      <div class="padding row" style="border-color: #3D3558; border-bottom: 1px;">
+        <div class="col col-50"><button class="button button-block button-input button-positive" style="background-color :#584d80 ; border: 1px solid #3D3558;" ng-click="openDatePicker()">Set Date</button></div>
+        <div class="col col-50"><button class="button button-block button-input button-positive" style="background-color :#584d80 ; border: 1px solid #3D3558;" ng-click="openTimePicker()">Set Time</button></div>
+      </div>
+      <label class="item item-input" style="border-color: #3D3558; border-bottom: 0px;">
+        <span class="col col-45" style="color: #8C889B; text-align: right;">Duration :</span>
+        <span class="col col-10"  style="text-align: center;" placeholder="1">{{newEventData.duration}}</span>
+        <span class="col col-45" style="color: #8C889B; text-align: left;">Day(s)</span>
+      </label>
+      <ionic-numberpicker class="col col-50 col-offset-25" input-obj="numberPickerObject">
+        <button class="button button-block button-input button-positive" style="background-color :#584d80 ; border: 1px solid #3D3558;">Set Duration</button> {{ inputNumber }}
+      </ionic-numberpicker>
+      <label class="item item-input" style="border-color: #3D3558; border-bottom: 0px;">
+      </label>
+      <div class="padding">
+        <button class="button button-block button-positive button-input" ng-click="doCreateEvent()">Create</button>
+
+      </div>
+    </div>
+
+
+</ion-content>
+</ion-content>
+</ion-modal-view>

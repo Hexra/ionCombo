@@ -1,0 +1,27 @@
+<ion-view hide-nav-bar="true" >
+  <ion-content has-header="false" padding="true" class="background-login Aligner no-padding no-margin">
+    <form>
+      <!-- <div class="list no-padding no-margin">
+        <label class="item item-input item-floating-label login-ui">
+        <span class="input-label"  style="color: #8C889B;" >Email</span>
+        <input type="text"  style="color: #FFFFFF;" placeholder="E-Mail" ng-model="loginData.username">
+      </label>
+      <div class="list no-padding no-margin">
+        <label class="item item-input item-floating-label login-ui">
+        <span class="input-label"  style="color: #8C889B; font-size: small;" >Password</span>
+        <input type="password"  style="color: #FFFFFF;" placeholder="Password" ng-model="loginData.password">
+      </label> -->
+        <div class="item item-input login-ui">
+          <input type="email" style="color: #FFFFFF;" placeholder="E-Mail" ng-model="loginData.username">
+        </div>
+        <div class="item item-input login-ui">
+          <input type="password" style="color: #FFFFFF;" placeholder="Password" ng-model="loginData.password">
+        </div>
+          <div class="padding topgap">
+          <button class="button button-block button-positive button-input" ng-click="doLogin()">Login</button>
+          <button class="button button-block button-positive button-input" style="background-color :#ff6600 ; border: 1px solid #803300;"  ng-click="modal.show()">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

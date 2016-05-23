@@ -1,0 +1,48 @@
+<ion-modal-view>
+  <ion-header-bar class="custom-purple">
+    <h1 class="title" style="color: #ffffff">Sign Up</h1>
+    <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+  </ion-header-bar>
+  <ion-content class="Aligner background-register no-padding no-margin">
+    <form>
+      <div class="list no-padding no-margin">
+        <!-- <div class="list no-padding no-margin">
+          <label class="item item-input item-floating-label login-ui">
+          <span class="input-label"  style="color: #8C889B; font-size: small;" >Name</span>
+          <input type="text"  style="color: #FFFFFF;" placeholder="Name" ng-model="RegisterData.name">
+        </label>
+        <div class="list no-padding no-margin">
+          <label class="item item-input item-floating-label login-ui">
+          <span class="input-label"  style="color: #8C889B; font-size: small;" >E-Mail</span>
+          <input type="email"  style="color: #FFFFFF;" placeholder="E-Mail" ng-model="RegisterData.email">
+        </label>
+        <div class="list no-padding no-margin">
+          <label class="item item-input item-floating-label login-ui">
+          <span class="input-label"  style="color: #8C889B; font-size: small;" >Password</span>
+          <input type="password"  style="color: #FFFFFF;" placeholder="Password" ng-model="RegisterData.password">
+        </label>
+        <div class="list no-padding no-margin">
+          <label class="item item-input item-floating-label login-ui">
+          <span class="input-label"  style="color: #8C889B; font-size: small;" >Verify Password</span>
+          <input type="password"  style="color: #FFFFFF;" placeholder="Verify Password" ng-model="RegisterData.password2">
+        </label> -->
+        <div class="item item-input register-ui">
+          <input type="text" style="color: #FFFFFF;" placeholder="Name" ng-model="RegisterData.name">
+        </div>
+        <div class="item item-input register-ui">
+          <input type="email" style="color: #FFFFFF;" placeholder="E-Mail" ng-model="RegisterData.email">
+        </div>
+        <div class="item item-input register-ui">
+          <input type="password" style="color: #FFFFFF;" placeholder="Password" ng-model="RegisterData.password">
+        </div>
+        <div class="item item-input register-ui">
+          <input type="password" style="color: #FFFFFF;" placeholder="Verify Password" ng-model="RegisterData.password2">
+        </div>
+        <div class="padding topgap">
+          <button class="button button-block button-positive button-input" ng-click="doRegister()">Sign Up</button>
+        </div>
+      </div>
+    </form>
+</ion-content>
+  </ion-content>
+</ion-modal-view>

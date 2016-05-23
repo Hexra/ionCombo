@@ -1,0 +1,260 @@
+/* Empty. Add your own CSS if you like */
+
+.no-padding {
+  padding: 0px !important;
+}
+.no-margin {
+  margin: 0px !important;
+}
+
+.bgx{
+ background: url(../img/IntroBg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+.popup-head {
+  background-color: #3D3558 !important;
+
+}
+
+.popup-title {
+    color : #FFFFFF !important;
+}
+.button-balanced{
+    background-color: #584d80 !important;
+    border: 1px solid #3D3558 !important;
+}
+/* intro css */
+
+ion-slide img {
+  height: 78vh !important;
+  width: auto !important;
+}
+
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: transparent;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+/* transperent nav bar css */
+
+.bar.bar-light {
+  background-color: transparent !important; /* or transparent, or background:none */
+}
+.scroll-content {
+  overflow: visible !important;
+}
+
+.bar-header {
+    border: 0px !important;
+    border-bottom-color: transparent !important;
+    background-image: none !important;
+    border-bottom: none !important;
+}
+
+.button.ng-hide{
+  display:none;
+}
+
+ion-item.no-padding a.item-content,
+ion-item.no-padding a.item-content .row {
+  padding: 0px;
+  color: #fff;
+}
+
+ion-item.no-padding a.item-content .row .color1 {
+  background: red;
+  padding: 15px 10px;
+}
+
+ion-item.no-padding a.item-content .row .color2 {
+  background: blue;
+  padding: 15px 10px;
+}
+
+.me {
+padding-top: 30vh;
+margin-left: 1vh;
+margin-right: 2vh;
+}
+
+.login-ui
+ {
+  /*-webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;*/
+   /*border: 2px solid #4d4d4d!important;*/
+  margin-left:15px;
+  margin-right:15px;
+  margin-bottom: 2  px;
+
+  border: 0px solid #8C889B;
+  border-bottom-width: 2px;
+  background-color: transparent;
+
+}
+
+.input-ui
+ {
+  /*-webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;*/
+   /*border: 2px solid #4d4d4d!important;*/
+  margin-left:15px;
+  margin-right:15px;
+  margin-bottom: 2  px;
+
+  border: 0px solid #4d4d4d;
+  border-bottom-width: 2px;
+  background-color: transparent;
+
+}
+
+.display-event {
+  border: 2px solid;
+  border-color: #333333;
+  background-color: transparent;
+   border-radius: 10px;
+}
+.myevent{
+  text-align: center;
+}
+.left33{
+  background-color: #0066cc;
+  font-family: Georgia, serif;
+}
+.right66{
+  background-color: #004d99;
+}
+.form-ui{
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+   border: 2px solid #4d4d4d!important;
+}
+/*textarea, input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"],
+input[type="date"], input[type="month"], input[type="time"],
+input[type="week"], input[type="number"], input[type="email"],
+input[type="url"], input[type="search"], input[type="tel"], input[type="color"]{
+
+  color: #ffffff;
+}*/
+
+.register-ui
+{
+  margin-left:15px;
+  margin-right:15px;
+  margin-bottom: 2  px;
+  border: 0px solid #8C889B;
+  border-bottom-width: 2px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+
+.topgap{
+  margin-top: 20px;
+}
+
+.button-input
+ {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.background-login
+{
+  background-color: #3D3558 !important;
+}
+
+.Aligner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/**********************************
+ Register header color
+**********************************/
+.custom-purple {
+    background-color: #3D3558 !important;
+ }
+
+ .background-register
+ {
+   background-color: #584d80 !important;
+ }
+
+
+ .tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
+   background-color: #584d80 !important;
+     color: white !important;
+ }
+.tabStyle {
+  background-color: #FFFFFF;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding-bottom:  0px !important;
+  color: #000000;
+  border-style: none !important;
+  border-color: #584d80 !important;
+  border-width: 0 0 0 0 !important;
+}
+.tabs-striped .tabs{
+  border-bottom: 10px !important;
+  border-top: 0px !important;
+}
+
+.input-label{
+  font-size: .9em;
+}
+
+/*.tab-item {
+    opacity: 0.85;
+}
+
+.tabPage {
+  margin-top: 0px !important;
+}*/
+
+.bar.bar-dark {
+border: none;
+background-color: transparent !important;
+}
+.tabs-dark {
+border: none;
+}

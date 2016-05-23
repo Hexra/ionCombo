@@ -1,0 +1,50 @@
+<ion-view view-title="My Events">
+  <!-- <ion-header-bar class="custom-purple"> -->
+    <!-- <h1 class="title" style="color: #ffffff">My Events</h1> -->
+  <!-- </ion-header-bar> -->
+  <ion-content class="background-register">
+    <form>
+      <div class="list">
+        <div class="padding" style="padding-bottom: 0px !important">
+          <button class="button button-block button-positive button-input" style="background-color :#ff6600 ; border: 1px solid #803300; margin-top: 5px;" ng-click="modal.show()">New Event</button>
+        </div>
+        <ion-list>
+          <div class="padding" style="padding-bottom: 10px; padding-top: 10px">
+          <ion-item ng-repeat="myevent in myevents " class="no-padding display-event" style="margin-bottom: 10px;" href="#/app/myevents/{{myevent}}" >
+            <div class="row no-padding no-margin" style="border: 0px">
+                <div id="div1" class="col col-33 no-padding no-margin left33" style="border: 0px;">
+                  <div class="row">
+                    <div class="row">
+                      <div class="col col-50 no-padding no-margin">
+                      <div class="col  myevent left33" rowspan="2" style="font-size:42px;text-align: right;"><br>{{myevent.event_date_start | date: 'dd' }}</div>
+                      </div>
+                      <div class="col col-50 no-padding no-margin">
+                        <div class="col myevent left33" style="text-transform: uppercase; ">{{myevent.event_date_start | date: 'MMM' }}</div>
+                        <div class="col myevent left33">{{myevent.event_date_start | date: 'yyyy' }}</div>
+                      </div>
+                    </div>
+                    </div>
+                      <div class="col myevent" style="background-color:#336699">{{myevent.time}}</div>
+                </div>
+                <div id="div2" class="col col-66 color2 no-padding no-margin right66" style="border: 0px">
+                  <!-- <marquee class="col myevent right66" behavior="scroll" direction="left">{{myevent.title}}</marquee> -->
+                  <div class="col myevent right66" style="font-size:16px;">{{myevent.title}}</div>
+                  <div class="col myevent right66">{{myevent.location}}</div>
+                  <div class="col myevent right66">{{myevent.participant}}</div>
+                </div>
+            </div>
+            <ion-option-button class="button-calm icon ion-android-favorite" ng-click="favorite(item)">
+                &nbsp Favorite
+             </ion-option-button>
+             <ion-option-button class="button-positive icon ion-android-notifications" ng-click="notify(item)">
+                &nbsp Notify
+           </ion-option-button>
+          </ion-item>
+
+        </div>
+      </div>
+        </ion-list>
+    </form>
+</ion-content>
+  </ion-content>
+</ion-view>
